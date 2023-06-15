@@ -52,20 +52,20 @@ def write_cnn_report():
     
     Model: "CNN for binary image classification"
     _________________________________________________________________
-    Layer (type)                 Output Shape          	Param #   
+    Layer (type)                Output Shape          	Param #   
     =================================================================
-    Conv_1 (Conv2D)         	 (None, 78, 78, 16)    	448  	
-    Max-Pool_1 (MaxPooling2D)    (None, 39, 39, 16)    	0    
-    Conv_2 (Conv2D)         	 (None, 37, 37, 32)    	4640 	 
-    Max-Pool_2 (MaxPooling2D)    (None, 18, 18, 32)    	0    	
-    Conv_3 (Conv2D)         	 (None, 16, 16, 64)    	18496	 
-    Max-Pool_3 (MaxPooling2D)    (None, 8, 8, 64)      	0    	 
-    Conv_4 (Conv2D)         	 (None, 6, 6, 32)      	18464	 
-    Max-Pool_4 (MaxPooling2D)    (None, 3, 3, 32)      	0    
-    Dropout_1 (Dropout)     	 (None, 3, 3, 32)       0    	 
-    Flatten_1 (Flatten)       	 (None, 288)           	0    
-    Dense_1 (Dense)         	 (None, 512)           	147968    
-    Dense_2 (Dense)         	 (None, 1)             	513  	  
+    Conv_1 (Conv2D)             (None, 78, 78, 16)    	448  	
+    Max-Pool_1 (MaxPooling2D)   (None, 39, 39, 16)    	0    
+    Conv_2 (Conv2D)             (None, 37, 37, 32)    	4640 	 
+    Max-Pool_2 (MaxPooling2D)   (None, 18, 18, 32)    	0    	
+    Conv_3 (Conv2D)             (None, 16, 16, 64)    	18496	 
+    Max-Pool_3 (MaxPooling2D)   (None, 8, 8, 64)      	0    	 
+    Conv_4 (Conv2D)             (None, 6, 6, 32)      	18464	 
+    Max-Pool_4 (MaxPooling2D)   (None, 3, 3, 32)      	0    
+    Dropout_1 (Dropout)         (None, 3, 3, 32)            0    	 
+    Flatten_1 (Flatten)         (None, 288)           	0    
+    Dense_1 (Dense)             (None, 512)           	147968    
+    Dense_2 (Dense)             (None, 1)             	513  	  
     =================================================================
     Total params: 190,529
     Trainable params: 190,529

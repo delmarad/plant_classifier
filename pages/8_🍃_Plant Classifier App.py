@@ -52,8 +52,6 @@ st.sidebar.header("Test Data Selection")
 
 uploaded_files = st.sidebar.file_uploader("Upload your plant images for classification", accept_multiple_files=True)
 
-st.write("Authors: Rita, Tiago, Martin")
-
 st.write("This classifier application allows to test and compare the prediction performance of various pretrained models for classifying health status, plant species and deseases.")
 st.write("Using tensorflow version "+plant_data.get_TF_version())
 
@@ -266,6 +264,6 @@ if uploaded_files:
 
         
 else:
-    st.markdown("_Please upload files._")
+    st.markdown("_Please upload test images._")
     
 
