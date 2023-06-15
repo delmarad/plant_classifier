@@ -48,7 +48,7 @@ validationset_metadata = load_validation_metadata()
 # load pretrained prediction models as dict 
 keras_models = load_models()
 
-st.sidebar.header("Sidebar")
+st.sidebar.header("Test Data Selection")
 
 uploaded_files = st.sidebar.file_uploader("Upload your plant images for classification", accept_multiple_files=True)
 
