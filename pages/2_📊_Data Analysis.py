@@ -4,7 +4,7 @@ from PIL import Image
 
 st.title("Data Analysis")
 
-st.write("For this project we looked into two Kaggle.com-datasets for plant classification: the PlantVillage Dataset and the New Plant Diseases Dataset. Although there is quite some overlap, we selected  the New Plant Diseases Dataset as the basis for our research because it has already augmented data.")
+st.write("For this project we looked into two Kaggle.com-datasets for plant classification: the [PlantVillage Dataset](https://github.com/spMohanty/PlantVillage-Dataset) and the [New Plant Diseases Dataset](https://www.kaggle.com/datasets/vipoooool/new-plant-diseases-dataset). Although there is quite some overlap, we selected  the New Plant Diseases Dataset as the basis for our research because it has already augmented data.")
 
 st.write("The New Plant Diseases Dataset contains 256x256 pixel JPG images (colorspace RGB) for a variety of plants as well as examples of healthy ones and plants with diseases. It consists of a collection of 87.867 expertly curated images on healthy and infected leaves of crops plants through the existing online platform PlantVillage. This Dataset leads to the scope of this project, to enable the identification of infectious diseases by using Machine Learning.")
 
