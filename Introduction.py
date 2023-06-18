@@ -21,7 +21,7 @@ st.markdown("""
     
     Tutor: **Francesco Madrisotti**
 
-    Code: [Github.com](https://github.com/delmarad/plant_classifier)
+    Code: [Github.com](https://github.com/delmarad/plant_classifier)(Plant Classifier App), [Github.com](https://github.com/RBotL/Plant)(Jupyter Notebooks for model training)
 
 """)
 
