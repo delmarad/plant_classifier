@@ -223,45 +223,55 @@ if uploaded_files:
 
     with report_tab:
     
-        st.subheader("Health Classification")
-
-        st.markdown("##### Model: Lenet")
-        write_metrics(predicted_df['health_label'], predicted_df['health_lenet_prediction'])
-
-        st.markdown("##### Model: CNN")
-        write_metrics(predicted_df['health_label'], predicted_df['health_cnn_prediction'])
+        choice = st.selectbox(label="Please select the classification task:", options=[
+            "Binary (Healthy/Not-Healthy)", 
+            "Plant (Species)", 
+            "Plant-Disease"]
+            , index=0)
 
 
+        if choice == "Binary (Healthy/Not-Healthy)":
 
+            st.subheader("Health Classification")
+
+            st.markdown("##### Model: Lenet")
+            write_metrics(predicted_df['health_label'], predicted_df['health_lenet_prediction'])
+
+            st.markdown("##### Model: CNN")
+            write_metrics(predicted_df['health_label'], predicted_df['health_cnn_prediction'])
+
+
+        elif choice == "Plant (Species)":
         
         
-        st.subheader("Plant Classification")
+            st.subheader("Plant Classification")
 
-        st.markdown("##### Model: Lenet")
-        write_metrics(predicted_df['plant_label'], predicted_df['plant_lenet_prediction'])
+            st.markdown("##### Model: Lenet")
+            write_metrics(predicted_df['plant_label'], predicted_df['plant_lenet_prediction'])
 
-        st.markdown("##### Model: Custom")
-        write_metrics(predicted_df['plant_label'], predicted_df['plant_custom_prediction'])
+            st.markdown("##### Model: Custom")
+            write_metrics(predicted_df['plant_label'], predicted_df['plant_custom_prediction'])
 
        
         
+        elif choice == "Plant-Disease":
         
-        
-        st.subheader("Plant-Desease Classification")
+            st.subheader("Plant-Desease Classification")
 
-        st.markdown("##### Model: Lenet")
-        write_metrics(predicted_df['plant_desease_label'], predicted_df['plant_desease_lenet_prediction'])
+            st.markdown("##### Model: Lenet")
+            write_metrics(predicted_df['plant_desease_label'], predicted_df['plant_desease_lenet_prediction'])
 
-        st.markdown("##### Model: Custom")
-        write_metrics(predicted_df['plant_desease_label'], predicted_df['plant_desease_custom_prediction']) 
+            st.markdown("##### Model: Custom")
+            write_metrics(predicted_df['plant_desease_label'], predicted_df['plant_desease_custom_prediction']) 
 
-        st.markdown("##### Model: Custom-Generator")
-        write_metrics(predicted_df['plant_desease_label'], predicted_df['plant_desease_custom_gen_prediction'])
+            st.markdown("##### Model: Custom-Generator")
+            write_metrics(predicted_df['plant_desease_label'], predicted_df['plant_desease_custom_gen_prediction'])
 
-        st.markdown("##### Model: Resnet")
-        write_metrics(predicted_df['plant_desease_label'], predicted_df['plant_desease_resnet_prediction']) 
+            st.markdown("##### Model: Resnet")
+            write_metrics(predicted_df['plant_desease_label'], predicted_df['plant_desease_resnet_prediction']) 
 
-
+        else:
+            pass
         
 else:
     st.markdown("_Please upload test images._")
