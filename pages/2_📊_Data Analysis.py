@@ -10,7 +10,7 @@ st.write("The New Plant Diseases Dataset contains 256x256 pixel JPG images (colo
 
 st.write("The metadata of the New Plant Diseases dataset is encoded in the names of the subfolder, e.g., the 'Apple___Apple_scab'-folder contains images of the plant 'Apple' with the specific disease 'Apple_scab'. Images that are considered to display a healthy plant are also stored in this structure, e.g. 'Apple___healthy' contains only images of disease-free apples. Each JPG-file contains as filename a unique ID. Besides their name the JPG files do not contain any other metadata (such as EXIF).")
 
-st.write("The dataset consists overall of 7867 images and is already split into a train and test portion.")
+st.write("The dataset consists overall of 87,867 images and is already split into a train and test portion.")
 
 st.image(Image.open('images/dataset_train_test_split.png'))
 
